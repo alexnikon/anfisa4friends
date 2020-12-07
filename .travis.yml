@@ -1,7 +1,5 @@
 language: python
-env:
-  -SECRET_KEY='TEST'
-install:
-  -pipenv
+services:
+  - django
 script:
-  -python manage.py test
+  - python manage.py test
