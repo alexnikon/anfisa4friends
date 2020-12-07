@@ -1,5 +1,9 @@
 language: python
 env:
   -SECRET_KEY='TEST'
+service:
+  -postgresql
 install:
-  -gjango install
+  -pipenv install
+script:
+  -python manage.py test
