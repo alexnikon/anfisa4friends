@@ -3,7 +3,5 @@ env:
   -SECRET_KEY='TEST'
 service:
   -postgresql
-install:
-  -pipenv install
 script:
   -python manage.py test
