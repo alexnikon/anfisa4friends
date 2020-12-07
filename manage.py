@@ -3,6 +3,11 @@
 import os
 import sys
 
+STATIC_ROOT = '/home/username/projects/site/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'anfisa4friends.settings')
