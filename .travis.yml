@@ -4,5 +4,3 @@ env:
   -SECRET_KEY='TEST'
 service:
   -postgresql
-install:
-  -pipenv install
