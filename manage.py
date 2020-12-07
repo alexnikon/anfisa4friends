@@ -17,8 +17,6 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = "/static/"
 
 if __name__ == '__main__':
     main()

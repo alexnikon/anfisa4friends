@@ -1,0 +1,1 @@
+web: gunicorn anfisa4friends.urls
