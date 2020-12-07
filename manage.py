@@ -3,8 +3,7 @@
 import os
 import sys
 
-STATIC_ROOT = '/home/username/projects/site/static/'
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'anfisa4friends.settings')
@@ -18,6 +17,8 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = "/static/"
 
 if __name__ == '__main__':
     main()
