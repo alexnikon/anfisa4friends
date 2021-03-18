@@ -1,5 +1,7 @@
 language: python
 services:
   - django
+before_script:
+  - pip install requests
 script:
   - python manage.py test
